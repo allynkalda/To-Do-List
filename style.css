@@ -23,6 +23,7 @@ h1 {
 }
 li {
 	list-style: none;
+	vertical-align: bottom;
 }
 .box1 {
 	text-align:center;
@@ -44,12 +45,31 @@ img {
 	width: 80px;
 	font-size: 20px;
 	margin-left: 5px;
-	padding-bottom: 5px;
+	padding: 0px 0px 5px 0px;
 	border: none;
 	border-radius: 5px;
 	background-color: #E78F8E;
   	transition: all .5s ease-in-out;
+  	background-image: none;
+  	clear: both;
 }
 #add-button:hover {
-      background-color: #AD3736;
-      transform: scale(1.1);
+    background-color: #AD3736;
+    transform: scale(1.1);
+}
+button {
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+	background-image: url('trash.png');
+	background-size: 42px 42px;
+	border: none;
+	padding-top: 20px;
+}
+li {
+	font-family: "Laila";
+	text-align: center;
+	padding-right: 13px;
+	margin-bottom: 20px;
+
+}
