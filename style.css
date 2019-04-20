@@ -51,13 +51,12 @@ img {
 	background-color: #E78F8E;
   	transition: all .5s ease-in-out;
   	background-image: none;
-  	clear: both;
 }
 #add-button:hover {
     background-color: #AD3736;
     transform: scale(1.1);
 }
-button {
+delete-button {
 	height: 40px;
 	width: 40px;
 	border-radius: 50px;
@@ -65,11 +64,12 @@ button {
 	background-size: 42px 42px;
 	border: none;
 	padding-top: 20px;
+	position: absolute;
 }
 li {
 	font-family: "Laila";
 	text-align: center;
 	padding-right: 13px;
 	margin-bottom: 20px;
-
+	border: 1px solid #0000;
 }
