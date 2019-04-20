@@ -1,35 +1,41 @@
+let arrayList = [];
+
 // Append new list
-
-function sample() {
-	var textInput = document.getElementById("input-text").value;
-	var list = document.createElement("li");
-	var node = document.createTextNode(textInput);
-	var listNode = document.getElementById("ul-list");
-	var before = document.getElementById("li1");
-
-	list.appendChild(node);
-	listNode.insertBefore(list, before);
+function appendToList() {
+	let list = document.createElement('LI')
+	let textInput = document.getElementById('input-text').value;
+	let textNode = document.createTextNode(textInput);
+		arrayList.push(textInput);
 
 
-	var button = document.createElement("button");
-//	button.innerText = 'Delete';
-	list.appendChild(button);
+	list.appendChild(textNode);
+	document.getElementById('ul-list').appendChild(list);
+// Append buttons for deleting
+	let deleteButtons = document.createElement('button');
+	list.appendChild(deleteButtons);
+	deleteButtons.setAttribute('id', arrayList.length - 1);
+	deleteButtons.setAttribute('class', 'delete-button');
+// Set ID attribute
+	list.setAttribute('id', arrayList.length - 1);
 
+	console.log(arrayList);
 }
 
-
-button.click(function () {
- var remove = document.getElementById("ul-list");
-	list.removeChild(remove.childNodes[0]);
-
-}
-
-function erase() {
-	var remove = document.getElementById("ul-list");
-	list.removeChild(remove.childNodes[0]);
-}
+let buttonList = document.getElementById('add-button');
+buttonList.addEventListener('click', function(e){ 
+    appendToList();
+    e.preventDefault();
+});
 
 
-*/
+let deleteList = document.getElementsByClassName('delete-button');
+deleteList.addEventListener('click', function() {
+	let listDelete = document.get
+	list.remove();
+});
+
+
+
+
 
 
